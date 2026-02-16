@@ -1,0 +1,7 @@
+# settings.toml
+WIFI_SSID = "wifinavn"
+WIFI_PASSWORD = "wifikode"
+AIO_USERNAME = "dit adafruit io brugernavn"
+AIO_KEY = "din aio nøgle"
+BROKER = "io.adafruit.com"
+PORT = 1883
