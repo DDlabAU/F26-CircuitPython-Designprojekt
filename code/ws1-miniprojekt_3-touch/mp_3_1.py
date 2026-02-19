@@ -5,6 +5,9 @@ while True:
     if cp.touch_A1:
         print("Touched pad A1")
         cp.red_led = True
+        cp.pixels.fill((120, 80, 0))
     else:
         cp.red_led = False
+        cp.pixels.fill((0, 0, 0))
+
     time.sleep(0.05)
