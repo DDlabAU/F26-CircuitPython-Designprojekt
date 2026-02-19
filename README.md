@@ -117,6 +117,19 @@ Løsninger er i mappen `code/ws1-miniprojekt_3-touch/`
 
 ---
 
+### Libraries
+Skal kun hentes én gang. Skal dog hentes på ny hvis du installerer en nyere version af cpy på et board
+
+Følg [adafruits vejledning til libraries](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-libraries). 
+Læs og udfør, hvad der står i guiden. Lad dog være med at hente koden til deres project bundle eksempel.
+
+Når I er færdige med vejledningen, vil I have både Adafruits bundle af libraries, samt et community bundle, hentet på jeres maskiner. Gem dem et sted hvor I let kan finde dem igen. I kan bruge disse libraries til fremtidige miniopgaver, projekter og designarbejde, så længe I ikke installerer en ny version af cpy. Det kan dog være en god idé at tjekke efter opdateringener til de to bundles med jævne mellemrum. 
+
+> [!IMPORTANT]
+> Husk at vælge versionen der passer til din version af CircuitPython
+
+---
+
 ### Miniprojekt 4: Servo
 Startkode: `code/ws1-miniprojekt_4-servo/mp4_0.py`
 
@@ -148,20 +161,6 @@ while True:
 Løsninger er i mappen `code/ws1-miniprojekt_4-servo`
 1. Styr servo med et input. Måske får et tryk på en touch pad den til at bevæge sig til tilsvarende sted hen. Måske ryster den, når det larmer, eller når det bliver mørkt. 
     - Se forskellige muligheder i linket under miniprojekt 1
-
-
----
-
-### Libraries
-Skal kun hentes én gang. Skal dog hentes på ny hvis du installerer en nyere version af cpy på et board
-
-Følg [adafruits vejledning til libraries](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-libraries). 
-Læs og udfør, hvad der står i guiden. Lad dog være med at hente koden til deres project bundle eksempel.
-
-Når I er færdige med vejledningen, vil I have både Adafruits bundle af libraries, samt et community bundle, hentet på jeres maskiner. Gem dem et sted hvor I let kan finde dem igen. I kan bruge disse libraries til fremtidige miniopgaver, projekter og designarbejde, så længe I ikke installerer en ny version af cpy. Det kan dog være en god idé at tjekke efter opdateringener til de to bundles med jævne mellemrum. 
-
-> [!IMPORTANT]
-> Husk at vælge versionen der passer til din version af CircuitPython
 
 ---
 
