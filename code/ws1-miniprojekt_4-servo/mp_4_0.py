@@ -1,8 +1,17 @@
-"""CircuitPython Essentials Servo standard servo example"""
 import time
 import board
 import pwmio
 from adafruit_motor import servo
+
+# Hvis ledningerne er rød, sort, hvid:
+# Rød -> VOut
+# Sort -> GND
+# Hvid -> A2
+
+# Hvis ledningerne er rød, brun, orange:
+# Rød -> VOut
+# Brun -> GND
+# Orange -> A2
 
 # create a PWMOut object on Pin A2.
 pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)

@@ -136,11 +136,20 @@ Startkode: `code/ws1-miniprojekt_4-servo/mp4_0.py`
 En servo er en motor der kan styres til en bestemt position. Dem vi skal arbejde med i dag kan sættes mellem 0 og 180 grader. Den er et godt alternativ til lys, når man skal bruge et simpelt output. Kan også let bruges kreativt til f.eks. at åbne noget eller pege på noget. Husk at servoens "arm" let kan erstattes af eller udvides med noget I bygger eller 3d-printer.
 
 ```python
-"""CircuitPython Essentials Servo standard servo example"""
 import time
 import board
 import pwmio
 from adafruit_motor import servo
+
+# Hvis ledningerne er rød, sort, hvid:
+# Rød -> VOut
+# Sort -> GND
+# Hvid -> A2
+
+# Hvis ledningerne er rød, brun, orange:
+# Rød -> VOut
+# Brun -> GND
+# Orange -> A2
 
 # create a PWMOut object on Pin A2.
 pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
