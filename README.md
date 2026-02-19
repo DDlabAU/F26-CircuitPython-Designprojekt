@@ -120,6 +120,8 @@ Løsninger er i mappen `code/ws1-miniprojekt_3-touch/`
 ### Miniprojekt 4: Servo
 Startkode: `code/ws1-miniprojekt_4-servo/mp4_0.py`
 
+En servo er en motor der kan styres til en bestemt position. Dem vi skal arbejde med i dag kan sættes mellem 0 og 180 grader. Den er et godt alternativ til lys, når man skal bruge et simpelt output. Kan også let bruges kreativt til f.eks. at åbne noget eller pege på noget. Husk at servoens "arm" let kan erstattes af eller udvides med noget I bygger eller 3d-printer.
+
 ```python
 """CircuitPython Essentials Servo standard servo example"""
 import time
@@ -144,8 +146,7 @@ while True:
 
 #### Opgaver:
 Løsninger er i mappen `code/ws1-miniprojekt_4-servo`
-1. Kør servo 0 -> 180 -> 0 grader.
-2. Styr servo med et input. Måske får et tryk på en touch pad til at bevæge sig til tilsvarende sted. Måske ryster den, når det larmer, eller når det bliver mørkt. 
+1. Styr servo med et input. Måske får et tryk på en touch pad den til at bevæge sig til tilsvarende sted hen. Måske ryster den, når det larmer, eller når det bliver mørkt. 
     - Se forskellige muligheder i linket under miniprojekt 1
 
 
