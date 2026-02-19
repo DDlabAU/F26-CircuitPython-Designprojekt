@@ -32,7 +32,7 @@ Jeg vil gerne have, at I følger vejledningen, både læse og udføre eventuelle
 ---
 
 ### Miniprojekt 1: NeoPixels
-Startkode: `code/miniprojekt_1-neopixels/mp_1_0.py`
+Startkode: `code/ws1-miniprojekt_1-neopixels/mp_1_0.py`
 
 ```python
 from adafruit_circuitplayground import cp
@@ -46,7 +46,7 @@ while True:
 ```
 
 #### Opgaver:
-Løsninger er i mappen `code/ws-miniprojekt_1-neopixels/`
+Løsninger er i mappen `code/ws1-miniprojekt_1-neopixels/`
 
 1. Få de to første pixels til at lyse med andre farver.
 2. Brug et `for`-loop til at lave alle samme farve.
