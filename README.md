@@ -114,7 +114,7 @@ Løsninger er i mappen `code/ws1-miniprojekt_3-touch/`
 1. Få touch på A1 til at trigge output.
 2. Tilknyt toner til flere pads. Spil en melodi.
     - Se "Play Tone" og "Start and Stop Tone" i library guide linket i miniprojekt 1.
-4. Brug krokodillenæb + ledende materialer som input.
+3. Ekstra: brug krokodillenæb + ledende materialer som input.
 
 ---
 
