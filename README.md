@@ -8,7 +8,7 @@ Dette repository er companion-materiale til en 2-delt workshop-serie i CircuitPy
 ### Opsætning af board og editor
 Før vi kan gå i gang er vi nødt til at installere CircuitPython (herefter cpy) på et board. Vi starter med at bruge et Circuit Playground Express (herefter cpx) board, som I kender fra tidligere workshops på 1. og 2. semester.
 
-Vi skal også have en editor, hvor vi kan skrive kode og kommunikere med boardet. Jeg har valgt at bruge MU-editoren, fordi den er forholdsvist let at komme i gang med og er anbefalet af adafruit.
+Vi skal også have en editor, hvor vi kan skrive kode og kommunikere med boardet. Jeg har valgt at bruge MU-editoren, fordi den er forholdsvis let at komme i gang med og er anbefalet af adafruit.
 
 > [!NOTE]
 > I er velkomne til at bruge en anden editor, hvis I har en som I bedre kan lide. I skal bare kunne få adgang til seriel forbindelse til boardet og repl. 
@@ -59,7 +59,7 @@ Løsninger er i mappen `code/ws1-miniprojekt_1-neopixels/`
 >
 > Skal man bruge neopixels på et andet board, skal man oftest importere det normale `neopixel` library. I kommer til at installere og importere andre biblioteker senere.
 
-Resourcer til denne og fremtidige opgaver:
+Ressourcer til denne og fremtidige opgaver:
 - [Circuit Playground Express library guide](https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/circuit-playground-express-library)
 - [Dokumentation for sleep](https://docs.micropython.org/en/v1.5/pyboard/library/time.html#time.sleep)
 - [Dokumentation for for loops og range](https://docs.python.org/3/tutorial/controlflow.html#the-range-function)
@@ -113,12 +113,13 @@ while True:
 Løsninger er i mappen `code/ws1-miniprojekt_3-touch/`
 1. Få touch på A1 til at trigge output.
 2. Tilknyt toner til flere pads. Spil en melodi.
-3. Brug krokodillenæb + ledende materialer som input.
+    - Se "Play Tone" og "Start and Stop Tone" i library guide linket i miniprojekt 1.
+4. Brug krokodillenæb + ledende materialer som input.
 
 ---
 
 ### Libraries
-Skal kun hentes én gang. Skal dog hentes på ny hvis du installerer en nyere version af cpy på et board
+For at kunne bruge andre komponenter, end dem der følger med boardet eller anden funktionalitet end den der kommer med  de indbyggede moduler, skal man installere libraries på sit board. 
 
 Følg [adafruits vejledning til libraries](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-libraries). 
 Læs og udfør, hvad der står i guiden. Lad dog være med at hente koden til deres project bundle eksempel.
@@ -186,26 +187,9 @@ I stedet for at rode rundt i serial monitoren efter fejl-beskeder omkring mangle
 Følg denne guide fra adafruit: [use circup to easily keep your CircuitPython libraries up to date](https://learn.adafruit.com/keep-your-circuitpython-libraries-on-devices-up-to-date-with-circup/prepare)
 
 
-`usage`-afsnittet bliver hurtigt langhåret, så orienter jer bare I den og prøv så selv at eksperimentere i jeres terminal. 
+`usage`-afsnittet bliver hurtigt langhåret, så orienter jer bare I det og prøv så selv at eksperimentere i jeres terminal. 
 
-Prøv eventuelt at gentage øvelsen fra adafruits libraries-guide, men med circup.
-```python 
-import board
-import time
-import simpleio
-
-led = simpleio.DigitalOut(board.LED)
-
-while True:
-    led.value = True
-    time.sleep(0.5)
-    led.value = False
-    time.sleep(0.5)
-```
-
-1. Gem koden som code.py på jeres board
-2. Slet hele `lib` mappen fra boardet
-3. Kør `circup install -a` og se hvad der sker
+Prøv det med jeres egen kode fra servo-opgaven, ved at slette lib-mappen fra boardet og derefter køre `circup install -a` og se hvad der sker. 
 
 
 - [CircUp overview](https://learn.adafruit.com/keep-your-circuitpython-libraries-on-devices-up-to-date-with-circup/overview)
@@ -229,9 +213,9 @@ Hvis I har lyst til allerede nu at prøve at arbejde med et andet board, kan I i
 ---
 
 ### Projekt:
-Lav jeres eget **lille** projekt med input og output, krav er at enten input, output eller begge dele skal være noget i ikke har brugt i miniprojekt 1-4
-f.eks. lyd som output eller temperatur/lyssensor som input.
-I skal bruge 1 STEMMA komponent, men I må gerne kombinere den med et input eller output der er indbygget på boardet.
+Lav jeres eget **lille** projekt med input og output, krav er at enten input, output, eller begge dele skal være noget I ikke har brugt i miniprojekt 1-4.
+F.eks. lyd som output eller temperatur/lyssensor som input.
+I skal bruge 1 STEMMA komponent, men I må gerne kombinere den med et input eller output der er indbygget på boardet. Husk også at boardet som output kan agere som mus eller tastatur og på den måde interagere med programmer på jeres computer.
 
 Lige nu skal I ikke finde på en designløsning, I skal eksperimentere og udforske teknologien og mulighederne i den. Så vær kreative og lav noget sjovt, dumt eller brugbart. 
 
